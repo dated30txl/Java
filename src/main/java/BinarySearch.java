@@ -3,15 +3,16 @@ import java.util.Random;
 
 public class BinarySearch {
     public static int binarySearch(int key, int[] a){
+        // массив a должен быть отсортированным
         int l = 0;                   // l, r — левая и правая границы
         int r = a.length - 1;
        while (l <= r){
-            int m = l + (r - l) / 2;
+            int m = l + (r - l) / 2; //m — середина области поиска
             if (key < a[m]) r = m - 1;
             else if (key > a[m]) l = m + 1;
-            else return m;
+            else return m; //Сужение области поиска
         }
-       return -1;
+       return -1; //элемент не найден
     }
 
     public static void main(String[] args) {

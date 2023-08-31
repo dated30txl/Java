@@ -3,17 +3,17 @@ import java.util.Random;
 
 public class BinarySearch {
     public static int binarySearch(int key, int[] a){
-        // массив a должен быть отсортированным
-        int l = 0;                   // l, r — левая и правая границы
+        // масив a має бути відсортованим
+        int l = 0;                   // l, r — ліва та права межі
         int r = a.length - 1;
         while (l <= r){
-            int m = l + r >>> 1; //m — середина области поиска
+            int m = l + r >>> 1; //m — середина області пошуку
             int mV = a[m];
             if (key < mV) r = m - 1;
             else if (key > mV) l = m + 1;
-            else  return m; //Сужение области поиска
+            else  return m; //Звуження області пошуку
         }
-       return -1; //элемент не найден
+       return -1; //елемент не знайдено
     }
 
     public static void main(String[] args) {

@@ -18,8 +18,27 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         int[] a = new Random().ints(30, 1, 14).toArray();
+
+        // Вимірювання часу для Arrays.sort
+        long startTimeArraysSort = System.nanoTime();
         Arrays.sort(a);
+        System.out.printf("Arrays.sort took: %.6f seconds\n"
+                , (System.nanoTime() - startTimeArraysSort) / 1_000_000_000.0);
+
         System.out.println(Arrays.toString(a));
         System.out.println(binarySearch(2, a));
+
+        int[] b = new Random().ints(30, 1, 14).toArray();
+
+        // Вимірювання часу для mergeSort
+        long startTimeMergeSort = System.nanoTime();
+        int[] c = MergeSort.mergeSort(b);
+        System.out.printf("MergeSort took: %.6f seconds\n"
+                , (System.nanoTime() - startTimeMergeSort) / 1_000_000_000.0);
+
+        System.out.println(Arrays.toString(c));
+        System.out.println(binarySearch(2, c));
+
     }
+
 }

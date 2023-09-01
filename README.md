@@ -8,3 +8,4 @@
 - [ ] hackerrank
 
 - [Grading students](https://github.com/dated30txl/Java/blob/main/src/main/java/GradingStudents.java)
+- [Migratory birds](https://github.com/dated30txl/Java/blob/main/src/main/java/migratoryBirds.java)

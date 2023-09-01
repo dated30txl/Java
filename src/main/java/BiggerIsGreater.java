@@ -10,23 +10,24 @@ public class BiggerIsGreater {
 
     public static String biggerIsGreater(String w) {
         return Stream.of(w.chars()
-                        .mapToObj(ch -> (char) ch)
-                        .collect(Collectors.toList()))
+                        .mapToObj(ch -> (char) ch)//List<Character>
+                        .collect(Collectors.toList()))//Stream<List<Character>>
                 .flatMap(chars -> {
-                    Optional<Integer> optI = IntStream.rangeClosed(0, chars.size() - 2)
-                            .boxed()
-                            .sorted(Collections.reverseOrder())
+//1. Знаходимо символ i у рядку (рахуючи з права наліво), який менший за наступний символ.
+                    Optional<Integer> optI = IntStream.rangeClosed(0, chars.size() - 2)//IntStream
+                            .boxed()//Stream<Integer>
+                            .sorted(Collections.reverseOrder())//зворотний лексикографічний порядок
                             .filter(idx -> chars.get(idx) < chars.get(idx + 1))
                             .findFirst();
 
                     if (optI.isEmpty()) return Stream.of("no answer");
                     int i = optI.get();
-
+//2. Знаходимо символ j справа від символу i, який є найменшим із символів, більших за символ i.
                     int j = IntStream.range(i + 1, chars.size())
                             .filter(idx -> chars.get(idx) > chars.get(i))
-                            .max()
+                            .max()//OptionalInt
                             .orElseThrow();
-
+//3. Swap
                     char temp = chars.get(i);
                     chars.set(i, chars.get(j));
                     chars.set(j, temp);

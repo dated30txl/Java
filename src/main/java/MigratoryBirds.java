@@ -1,22 +1,21 @@
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 public class MigratoryBirds {
     public static int migratoryBirds(List<Integer> arr) {
-        Map<Integer, Long> birdFrequency = arr
+        return  arr
                 .stream()
-                .collect(Collectors.groupingBy(bird -> bird, Collectors.counting()));
-
-        return birdFrequency
+                .collect(Collectors.groupingBy(bird -> bird, Collectors.counting()))
                 .entrySet()
                 .stream()
                 .min((entry1, entry2) -> {
                     int freqComparison = entry2
                             .getValue()
                             .compareTo(entry1.getValue());
-                    if (freqComparison == 0) {
+                    if (entry2
+                            .getValue()
+                            .compareTo(entry1.getValue()) == 0) {
                         return entry1
                                 .getKey()
                                 .compareTo(entry2.getKey());

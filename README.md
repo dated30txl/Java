@@ -4,7 +4,7 @@
 
 - [Binary search](https://github.com/dated30txl/Java/blob/main/src/main/java/BinarySearch.java)
 - [Merge sort](https://github.com/dated30txl/Java/blob/main/src/main/java/MergeSort.java)
-- [HashList](https://github.com/dated30txl/Java/blob/main/src/main/java/MergeSort.java) кастомна структура для Benchmark contains в BeautifulTriplets
+- [HashList](https://github.com/dated30txl/Java/blob/main/src/main/java/HashList.java) кастомна структура для Benchmark contains в BeautifulTriplets
 
 
 - [ ] hackerrank

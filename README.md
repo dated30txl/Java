@@ -14,3 +14,4 @@
 - [Bigger is greater](https://github.com/dated30txl/Java/blob/main/src/main/java/BiggerIsGreater.java)
 - [Modified Kaprekar number](https://github.com/dated30txl/Java/blob/main/src/main/java/KaprekarNumbers.java)
 - [Beautiful triplets](https://github.com/dated30txl/Java/blob/main/src/main/java/BeautifulTriplets.java)
+- [Picking numbers](https://github.com/dated30txl/Java/blob/main/src/main/java/PickingNumbers.java)

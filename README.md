@@ -17,3 +17,4 @@
 - [Picking numbers](https://github.com/dated30txl/Java/blob/main/src/main/java/PickingNumbers.java)
 - [Time in words](https://github.com/dated30txl/Java/blob/main/src/main/java/TimeInWords.java)
 - [Chocolate feast](https://github.com/dated30txl/Java/blob/main/src/main/java/ChocolateFeast.java)
+- [Bon appetit](https://github.com/dated30txl/Java/blob/main/src/main/java/BonAppetit.java)

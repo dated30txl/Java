@@ -1,3 +1,7 @@
+package hackerrank;
+
+import algorithms.HashList;
+
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.BiFunction;
@@ -94,7 +98,7 @@ public class BeautifulTriplets {
 
                     @Override
                     public String toString() {
-                        return "HashList";
+                        return "algorithms.HashList";
                     }
                 }
         };

@@ -1,3 +1,5 @@
+package hackerrank;
+
 public class KaprekarNumbers {
     public static void kaprekarNumbers(int p, int q) {
         boolean foundKaprekar = false;

@@ -1,3 +1,5 @@
+package hackerrank;
+
 public class ChocolateFeast {
     public static int chocolateFeast(int n, int c, int m) {
         int chocolates = n / c;

@@ -1,3 +1,5 @@
+package algorithms;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -33,7 +35,7 @@ public class BinarySearch {
         // Вимірювання часу для mergeSort
         long startTimeMergeSort = System.nanoTime();
         int[] c = MergeSort.mergeSort(b);
-        System.out.printf("MergeSort took: %.6f seconds\n"
+        System.out.printf("algorithms.MergeSort took: %.6f seconds\n"
                 , (System.nanoTime() - startTimeMergeSort) / 1_000_000_000.0);
 
         System.out.println(Arrays.toString(c));
